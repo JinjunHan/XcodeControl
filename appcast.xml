@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>XcodeControl</title>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Wed, 12 Aug 2026 15:18:53 +0800</pubDate>
+            <link>https://github.com/JinjunHan/XcodeControl</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/JinjunHan/XcodeControl/releases/download/v1.0.1/XcodeControl-1.0.1.dmg" length="7040696" type="application/octet-stream" sparkle:edSignature="VcUad6PbQL2PKdlG9kuCsfW+IcCcqpgtvmICZynw9pAJA0V+L+iLrsJmAslcXbvI5Zj2GaH5pUd1x+mxsi/hCw=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Wed, 12 Aug 2026 15:09:11 +0800</pubDate>
+            <link>https://github.com/JinjunHan/XcodeControl</link>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/JinjunHan/XcodeControl/releases/download/v1.0.0/XcodeControl-1.0.0.dmg" length="7040684" type="application/octet-stream" sparkle:edSignature="O3aMBrp20TUuvE/B+ECjKqqxb+h4h/9v+sUUbPcNMSANDUH1XM83+ZtcU+e2+hIvtUbHRcXcC7adzHNGsWGtBg=="/>
+        </item>
+    </channel>
+</rss>
