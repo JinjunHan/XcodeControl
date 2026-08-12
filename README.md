@@ -1,26 +1,59 @@
+<div align="center">
+
 # XcodeControl
 
-[简体中文](#简体中文) | [English](#english)
+**悬浮窗一键编译运行 Xcode 项目 —— 不用打开 Xcode，不用切换窗口**
 
-## 简体中文
+简体中文 | [English](README.en.md)
 
-XcodeControl 是一款轻量级 macOS 菜单栏工具，无需将 Xcode 窗口切换到前台，
-即可构建和运行 Xcode 项目。
+[![Release](https://img.shields.io/github/v/release/JinjunHan/XcodeControl?label=release&color=0A84FF)](https://github.com/JinjunHan/XcodeControl/releases/latest)
+[![macOS](https://img.shields.io/badge/macOS-26%2B-000000?logo=apple&logoColor=white)](#系统要求)
+[![Download DMG](https://img.shields.io/badge/download-DMG-34C759)](https://github.com/JinjunHan/XcodeControl/releases/latest)
 
-打开或拖入 `.xcodeproj`、`.xcworkspace` 文件，选择 Scheme 和运行目标后，
-即可通过紧凑的菜单栏界面执行构建、安装、启动、停止及日志查看等操作。
+<img src="screenshots/float.png" width="480" alt="XcodeControl 悬浮窗">
 
-### 功能
+</div>
 
-- 打开或拖入 Xcode 项目和工作区
-- 选择共享 Scheme
-- 在模拟器、已连接设备或本机上运行
-- 构建、安装、启动、停止应用，以及取消构建
-- 查看清晰的错误摘要和完整构建日志
-- 从菜单栏快速访问最近项目和常用操作
-- 配置构建行为、通知、登录时启动和全局快捷键
+## 为什么用它
 
-### 系统要求
+在 vibe coding 时代，代码越来越多由 AI 写完，Xcode 对你来说几乎只剩下一个功能：**Run**。
+
+可就为了这一步，你仍然要切到 Xcode、等它响应、点一下运行按钮，然后再切回编辑器 ——
+一天下来重复几十次，思路每次都被打断。
+
+XcodeControl 把这一步搬进一个常驻的悬浮窗：**按下 ⌥⌘R，编译、安装、启动一步到位。**
+你可以一边和 AI 写代码，一边把 App 直接跑到设备上，注意力始终留在写代码的窗口里。
+
+## 核心特性
+
+| 特性 | 说明 |
+| :--- | :--- |
+| 🪟 **常驻悬浮窗** | 小窗浮在代码之上，选好项目和设备即可构建、安装、启动、停止、取消，无需唤起 Xcode |
+| ⌨️ **全局快捷键** | 默认 <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>R</kbd>，在任何应用里按下都能运行，也可自行修改 |
+| 📱 **iOS 与 macOS 双端** | 运行到 iOS 模拟器、已连接的真机，或直接运行 Mac App |
+| 🗂️ **多项目管理** | 拖入 `.xcodeproj` / `.xcworkspace` 即可添加，随时在多个项目之间切换 |
+| 🧾 **构建结果一目了然** | 失败时给出可读的错误摘要，也能展开完整构建日志 |
+| 🔒 **完全本地** | 没有账号、分析和遥测，项目与构建输出都留在你的 Mac 上 |
+
+## 界面预览
+
+<div align="center">
+  <img src="screenshots/projects.png" width="840" alt="设置窗口的项目列表">
+  <p><em>设置窗口：管理项目列表，并配置通用、构建、行为和位置等偏好。</em></p>
+</div>
+
+## 快速开始
+
+1. 从 [GitHub Releases](https://github.com/JinjunHan/XcodeControl/releases/latest)
+   下载最新的、已通过 Apple 公证的 DMG。
+2. 打开 DMG，将 `XcodeControl.app` 拖入“应用程序”文件夹，然后启动它。
+3. 打开或拖入 `.xcodeproj`、`.xcworkspace` 文件，选择 Scheme 和运行目标。
+4. 按下 <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>R</kbd>，开始构建运行。
+
+XcodeControl 是菜单栏应用，不会显示 Dock 图标。只有在启用构建通知时，macOS 才可能
+请求通知权限。全局快捷键使用系统热键 API，不需要辅助功能权限。
+
+## 系统要求
 
 - macOS 26 或更高版本
 - 完整安装的 Xcode
@@ -29,96 +62,18 @@ XcodeControl 是一款轻量级 macOS 菜单栏工具，无需将 Xcode 窗口�
 仅安装 Command Line Tools 无法满足运行要求。XcodeControl 会调用本机的
 `xcodebuild`、`xcrun simctl` 和 `xcrun devicectl` 工具。
 
-### 安装
+## 隐私
 
-1. 从 [GitHub Releases](https://github.com/JinjunHan/XcodeControl/releases)
-   下载最新的、已通过 Apple 公证的 DMG。
-2. 打开 DMG，将 `XcodeControl.app` 拖入“应用程序”文件夹。
-3. 从“应用程序”文件夹启动 XcodeControl。
+没有账户系统，没有分析、广告和遥测。项目、偏好设置和构建输出都只留在你的 Mac 上。
 
-XcodeControl 是菜单栏应用，不会显示 Dock 图标。只有在启用构建通知时，
-macOS 才可能请求通知权限。全局快捷键使用系统热键 API，不需要辅助功能权限。
+## 关于本仓库
 
-### 隐私
+本仓库用于产品介绍、软件下载和版本记录，不公开 XcodeControl 源代码。
 
-XcodeControl 不提供账户系统，也不包含分析、广告或遥测功能。项目书签、
-最近使用的项目、偏好设置和构建输出均保留在您的 Mac 上，XcodeControl
-不会上传这些内容。
+官方安装包使用 Developer ID 证书签名并通过 Apple 公证。由于需要直接调用本机 Xcode
+命令行工具（App Sandbox 必须关闭），XcodeControl 不通过 Mac App Store 分发。
 
-### 分发说明
-
-官方安装包使用 Developer ID 证书签名，并提交 Apple 公证，通过
-[GitHub Releases](https://github.com/JinjunHan/XcodeControl/releases) 分发。
-由于核心工作流程需要直接访问本机 Xcode 命令行工具，应用必须关闭
-App Sandbox，因此不通过 Mac App Store 分发。
-
-本仓库仅用于提供产品介绍、软件下载、版本记录和用户支持，不公开
-XcodeControl 源代码。
-
-### 支持
+## 支持
 
 如需报告问题或寻求支持，请使用
 [GitHub Issues](https://github.com/JinjunHan/XcodeControl/issues)。
-
----
-
-## English
-
-XcodeControl is a lightweight macOS menu bar utility for building and running Xcode
-projects without bringing the Xcode window to the front.
-
-Open or drag in an `.xcodeproj` or `.xcworkspace`, choose a scheme and destination,
-then build, install, launch, stop, or inspect logs from a compact menu bar utility.
-
-### Features
-
-- Open or drag in Xcode projects and workspaces
-- Select shared schemes
-- Run on simulators, connected devices, or This Mac
-- Build, install, launch, stop, and cancel builds
-- View readable error summaries and full build logs
-- Access recent projects and common actions from the menu bar
-- Configure build behavior, notifications, login launch, and global shortcuts
-
-### Requirements
-
-- macOS 26 or later
-- A full Xcode installation
-- Working Xcode command-line tools selected with `xcode-select`
-
-Command Line Tools alone are not sufficient. XcodeControl calls the local
-`xcodebuild`, `xcrun simctl`, and `xcrun devicectl` tools.
-
-### Install
-
-1. Download the latest notarized DMG from
-   [GitHub Releases](https://github.com/JinjunHan/XcodeControl/releases).
-2. Open the DMG and drag `XcodeControl.app` to `Applications`.
-3. Launch XcodeControl from `Applications`.
-
-XcodeControl is a menu bar app and does not show a Dock icon. On first use, macOS may
-ask for notification permission only when build notifications are enabled. Global
-shortcuts use the system hot-key API and do not require Accessibility permission.
-
-### Privacy
-
-XcodeControl has no account system, analytics, advertising, or telemetry. Project
-bookmarks, recent projects, preferences, and build output remain on your Mac and are
-not uploaded by XcodeControl.
-
-### Distribution
-
-Official binaries are signed with a Developer ID certificate, submitted to Apple
-for notarization, and distributed through
-[GitHub Releases](https://github.com/JinjunHan/XcodeControl/releases). The app is not
-distributed through the Mac App Store because its core workflow requires direct
-access to the local Xcode command-line tools and therefore requires App Sandbox to
-be disabled.
-
-This repository is used for product information, downloads, release history, and
-support. The XcodeControl source code is not published here.
-
-### Support
-
-Please use [GitHub Issues](https://github.com/JinjunHan/XcodeControl/issues) for bug
-reports and support requests.
