@@ -3,6 +3,16 @@
     <channel>
         <title>XcodeControl</title>
         <item>
+            <title>1.0.4</title>
+            <pubDate>Tue, 01 Sep 2026 17:55:47 +0800</pubDate>
+            <link>https://github.com/JinjunHan/XcodeControl</link>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://jinjunhan.github.io/XcodeControl/XcodeControl-1.0.4.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/JinjunHan/XcodeControl/releases/download/v1.0.4/XcodeControl-1.0.4.dmg" length="6422371" type="application/octet-stream" sparkle:edSignature="1nY6N0855UaKe80w3DKCdiFf4yqR95N5wICZHV3P8FJ4v9ekdsgyI83Sssm9PUsv67faxv+rtMPxhwJprk8uBg=="/>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Mon, 17 Aug 2026 10:35:10 +0800</pubDate>
             <link>https://github.com/JinjunHan/XcodeControl</link>
