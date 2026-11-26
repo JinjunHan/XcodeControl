@@ -74,8 +74,7 @@ build output never leave your Mac.
 
 ## About this repository
 
-This repository is used for product information, downloads, and release history. The
-XcodeControl source code is not published here.
+The XcodeControl source is available in [macOS/XcodeControl](macOS/XcodeControl) under the [GPL-3.0 license](LICENSE).
 
 Official builds are signed with a Developer ID certificate and notarized by Apple.
 XcodeControl is not distributed through the Mac App Store because it calls the local

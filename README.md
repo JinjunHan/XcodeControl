@@ -68,7 +68,7 @@ XcodeControl 是菜单栏应用，不会显示 Dock 图标。只有在启用构�
 
 ## 关于本仓库
 
-本仓库用于产品介绍、软件下载和版本记录，不公开 XcodeControl 源代码。
+XcodeControl 源代码位于 [macOS/XcodeControl](macOS/XcodeControl)，按 [GPL-3.0](LICENSE) 许可发布。
 
 官方安装包使用 Developer ID 证书签名并通过 Apple 公证。由于需要直接调用本机 Xcode
 命令行工具（App Sandbox 必须关闭），XcodeControl 不通过 Mac App Store 分发。
