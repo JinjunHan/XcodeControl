@@ -22,7 +22,7 @@ struct DevicePickerView: View {
             }
 
             ScrollView {
-                LazyVStack(alignment: .leading, spacing: 1, pinnedViews: []) {
+                VStack(alignment: .leading, spacing: 1) {
                     ForEach(devices.groupedSections, id: \.source) { section in
                         SectionHeader(title: section.source.groupTitle)
 
